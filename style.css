@@ -11,6 +11,7 @@ body {
     background: #FFF3E0;
     color: #2C3E50;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -60,15 +61,24 @@ body {
     cursor: pointer;
 }
 
-/* Header */
-header {
+/* Header with Parallax */
+header.parallax {
     background: linear-gradient(135deg, #FF4500, #FFD700);
     color: #fff;
-    padding: 100px 20px;
+    padding: 150px 20px 100px;
     text-align: center;
     position: relative;
     overflow: hidden;
     margin-top: 70px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    z-index: 2;
 }
 
 header::before {
@@ -80,6 +90,7 @@ header::before {
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="1" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     pointer-events: none;
+    z-index: 1;
 }
 
 header h1 {
@@ -109,7 +120,7 @@ header p {
     color: #fff;
     padding: 15px 40px;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 50px;
     margin-top: 20px;
     font-weight: 700;
     font-size: 1.3em;
@@ -119,8 +130,63 @@ header p {
 }
 
 .btn:hover, .btn:focus {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(2deg);
     box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6);
+}
+
+/* Quiz Section */
+#quiz {
+    background: #FFE4B5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#quiz h2 {
+    font-size: 2.8em;
+    color: #FF4500;
+    margin-bottom: 20px;
+}
+
+#quiz p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#vibe-quiz {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.quiz-question select, .quiz-question input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #FF4500;
+}
+
+#energy-value {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: #FF4500;
+}
+
+#quiz-result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Product Grid */
@@ -155,10 +221,27 @@ main h2 {
     transition: all 0.3s ease;
     position: relative;
     border: 2px solid #FF4500;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.5s ease forwards;
 }
 
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+.product-card:nth-child(5) { animation-delay: 0.5s; }
+.product-card:nth-child(6) { animation-delay: 0.6s; }
+
 .product-card.trending::after {
-    content: '🔥 Mais Vendido!';
+    content: '🔥 Hit do Momento!';
     position: absolute;
     top: 10px;
     right: 10px;
@@ -171,7 +254,7 @@ main h2 {
 }
 
 .product-card:hover, .product-card:focus-within {
-    transform: translateY(-8px);
+    transform: translateY(-8px) rotate(1deg);
     box-shadow: 0 15px 40px rgba(255, 69, 0, 0.2);
 }
 
@@ -193,7 +276,7 @@ main h2 {
 }
 
 .product-card:hover img, .product-card:focus-within img {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-2deg);
 }
 
 .product-card h3 {
@@ -222,7 +305,7 @@ main h2 {
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 50px;
     margin: 0 20px 25px;
     display: inline-block;
     font-weight: 700;
@@ -233,7 +316,7 @@ main h2 {
 }
 
 .product-card .buy-btn:hover, .product-card .buy-btn:focus {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(3deg);
     box-shadow: 0 6px 20px rgba(255, 69, 0, 0.5);
 }
 
@@ -269,7 +352,7 @@ main h2 {
 }
 
 .testimonial-card:hover, .testimonial-card:focus-within {
-    transform: translateY(-5px);
+    transform: translateY(-5px) rotate(1deg);
 }
 
 .testimonial-card p {
@@ -282,6 +365,68 @@ main h2 {
     font-size: 1.2em;
     color: #FF4500;
     margin-top: 15px;
+}
+
+/* Chat Bubble and Modal */
+#chat-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FF4500;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+#chat-bubble:hover {
+    transform: scale(1.1);
+}
+
+#chat-modal {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.chat-content h3 {
+    color: #FF4500;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #FF4500;
+    border-radius: 8px;
+}
+
+#chat-send {
+    background: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#chat-messages {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 /* Footer */
@@ -360,7 +505,7 @@ footer a:hover, footer a:focus {
     }
 
     header {
-        padding: 60px 10px;
+        padding: 100px 10px 60px;
         margin-top: 50px;
     }
 
@@ -381,11 +526,15 @@ footer a:hover, footer a:focus {
         font-size: 1em;
     }
 
+    #quiz {
+        padding: 40px 15px;
+    }
+
     main {
         padding: 40px 15px;
     }
 
-    main h2, #testimonials h2 {
+    main h2, #testimonials h2, #quiz h2 {
         font-size: 2em;
     }
 
@@ -410,6 +559,11 @@ footer a:hover, footer a:focus {
         padding: 10px 25px;
         font-size: 1em;
     }
+
+    #chat-modal {
+        width: 90%;
+        right: 5%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -418,7 +572,7 @@ footer a:hover, footer a:focus {
     }
 
     header {
-        padding: 50px 10px;
+        padding: 80px 10px 50px;
     }
 
     header h1 {
