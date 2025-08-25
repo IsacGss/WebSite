@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Receitas Saudáveis',
             description: 'Comidas práticas pra sua vibe fit!',
             price: 'R$ 19,90',
-            image: 'images/saude.jpg',
+            image: 'images/Saude.jpg',
             kiwifyLink: 'https://pay.kiwify.com.br/sdee28v',
             trending: true
         },
@@ -93,4 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
