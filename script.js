@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Organize sua vida e arrase nos estudos!',
             price: 'R$ 29,90',
             image: 'images/produtividade.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-1',
+            kiwifyLink: 'https://pay.kiwify.com.br/QlA9k7L',
             trending: true
         },
         {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Comidas práticas pra sua vibe fit!',
             price: 'R$ 19,90',
             image: 'images/saude.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2',
+            kiwifyLink: 'https://pay.kiwify.com.br/sdee28v',
             trending: true
         },
         {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Aprenda a codar do zero, na prática!',
             price: 'R$ 32,50',
             image: 'images/python.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-3'
+            kiwifyLink: 'https://pay.kiwify.com.br/LA8mYNf'
         },
         {
             id: 'military disapproval guide',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Aprenda estratégias e ferramentas para impulsionar seu negócio online',
             price: 'R$ 29,90',
             image: 'images/Marketing.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2'
+            kiwifyLink: 'https://pay.kiwify.com.br/00DbxIY'
         },
         {
             id: 'Como Usar IA para Ganhar Dinheiro',
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Guia para Alavancar Sua Vida Profissional Usando IA',
             price: 'R$ 29,90',
             image: 'images/IA.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2'
+            kiwifyLink: 'https://pay.kiwify.com.br/N25hZF5'
         }
     ];
 
@@ -93,3 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
