@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Aprenda a codar do zero, na prática!',
             price: 'R$ 38,50',
             image: 'images/python.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-3'
+            kiwifyLink: 'https://kiwify.app/as195cO'
         },
         {
             id: 'military disapproval guide',
@@ -93,5 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
