@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
         {
-            id: ' subjects productivity guide',
+            id: 'subjects productivity guide',
             title: 'Produtividade Essencial',
             description: 'Organize sua vida e arrase nos estudos!',
             price: 'R$ 29,90',
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Receitas Saudáveis',
             description: 'Comidas práticas pra sua vibe fit!',
             price: 'R$ 19,90',
-            image: 'images/Saude.jpg',
+            image: 'images/saude.jpg',
             kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2',
             trending: true
         },
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'python for beginners guide',
             title: 'Python para Iniciantes',
             description: 'Aprenda a codar do zero, na prática!',
-            price: 'R$ 38,50',
+            price: 'R$ 32,50',
             image: 'images/python.jpg',
             kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-3'
         },
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Dicas pra mandar bem na seleção!',
             price: 'R$ 24,90',
             image: 'images/reprovado.jpg',
-            kiwifyLink: 'https://pay.kiwify.com.br/FqbaUXs'
+            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2'
         },
         {
             id: 'Marketing Digital',
@@ -53,8 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const productGrid = document.querySelector('.product-grid');
-
-    // Render produtos no grid principal
     products.forEach(product => {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
@@ -79,6 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Hamburger menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuToggle.textContent = '☰';
+        });
+    });
 });
-
-
