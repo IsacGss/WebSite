@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Organize sua vida e arrase nos estudos!',
             price: 'R$ 29,90',
             image: 'images/produtividade.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-1',
+            kiwifyLink: 'https://pay.kiwify.com.br/QlA9k7L',
             trending: true
         },
         {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'python for beginners guide',
             title: 'Python para Iniciantes',
             description: 'Aprenda a codar do zero, na prática!',
-            price: 'R$ 32,50',
+            price: 'R$ 38,50',
             image: 'images/python.jpg',
             kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-3'
         },
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Dicas pra mandar bem na seleção!',
             price: 'R$ 24,90',
             image: 'images/reprovado.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2'
+            kiwifyLink: 'https://pay.kiwify.com.br/FqbaUXs'
         },
         {
             id: 'Marketing Digital',
@@ -93,3 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
