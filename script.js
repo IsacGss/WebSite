@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'python for beginners guide',
             title: 'Python para Iniciantes',
             description: 'Aprenda a codar do zero, na prática!',
-            price: 'R$ 32,50',
+            price: 'R$ 38,50',
             image: 'images/python.jpg',
             kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-3'
         },
@@ -80,4 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
