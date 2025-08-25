@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Estratégias poderosas pra bombar seu negócio online!',
             price: 'R$ 29,90',
             image: 'images/Marketing.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2'
+            kiwifyLink: 'https://pay.kiwify.com.br/00DbxIY'
         },
         {
             id: 'Como Usar IA para Ganhar Dinheiro',
@@ -111,3 +111,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
