@@ -13,94 +13,51 @@
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <ul class="nav-links">
             <li><a href="#home">Início</a></li>
-            <li><a href="#quiz">Descubra Sua Vibe</a></li>
             <li><a href="#produtos">Guias</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#contato">Fale com a Gente</a></li>
         </ul>
     </nav>
 
-    <header id="home" class="parallax">
-        <div class="header-content">
-            <h1>Eleve Sua Vibe ao Máximo!</h1>
-            <p>Guias revolucionários que transformam sua rotina em uma jornada épica de sucesso e diversão!</p>
-            <a href="#quiz" class="btn">Faça o Quiz e Desbloqueie Ofertas Exclusivas!</a>
-            <div class="countdown">🚨 Promoção Relâmpago: Acaba em <span id="timer">00:00:00</span>!</div>
-        </div>
+    <header id="home">
+        <h1>Desbloqueie Sua Vibe!</h1>
+        <p>Guias irados pra turbinar sua vida, estudos e rolês!</p>
+        <a href="#produtos" class="btn">Bora Pegar os Guias</a>
     </header>
 
-    <section id="quiz">
-        <h2>Descubra Sua Vibe Perfeita</h2>
-        <p>Responda rápido e ganhe uma recomendação personalizada + desconto surpresa!</p>
-        <form id="vibe-quiz">
-            <div class="quiz-question">
-                <label>O que você quer turbinar agora?</label>
-                <select name="goal">
-                    <option value="">Selecione...</option>
-                    <option value="productivity">Produtividade e Estudos</option>
-                    <option value="health">Saúde e Alimentação</option>
-                    <option value="coding">Programação e Tech</option>
-                    <option value="military">Carreira Militar</option>
-                    <option value="marketing">Marketing Digital</option>
-                    <option value="ai">IA e Futuro Profissional</option>
-                </select>
-            </div>
-            <div class="quiz-question">
-                <label>Seu nível de energia atual?</label>
-                <input type="range" name="energy" min="1" max="10" value="5">
-                <span id="energy-value">5</span>
-            </div>
-            <button type="submit" class="btn">Revelar Minha Vibe!</button>
-        </form>
-        <div id="quiz-result" style="display: none;"></div>
-    </section>
-
     <main id="produtos">
-        <h2>Guias que Vão Explodir Sua Mente</h2>
+        <h2>Guias que São Sua Cara</h2>
         <section class="product-grid">
             <!-- Os cards dos PDFs serão inseridos aqui -->
         </section>
     </main>
 
     <section id="testimonials">
-        <h2>Histórias Reais de Vibes Transformadas</h2>
+        <h2>O que a Galera Tá Falando</h2>
         <div class="testimonial-grid">
             <div class="testimonial-card">
-                <p>"Esse guia de produtividade é como um superpoder! Minha vida virou um game que eu tô vencendo!"</p>
+                <p>"O guia de produtividade é tipo um hack pro cérebro! Minha rotina tá voando!"</p>
                 <h4>— João, 19 anos</h4>
             </div>
             <div class="testimonial-card">
-                <p>"Receitas que me fizeram amar cozinhar. Tô fit e cheio de energia pra conquistar o mundo!"</p>
+                <p>"As receitas são simples e cabem no bolso. Tô comendo bem e na vibe fit!"</p>
                 <h4>— Maria, 22 anos</h4>
             </div>
             <div class="testimonial-card">
-                <p>"Python do zero ao herói. Criei meu primeiro app e tô pronto pro próximo level!"</p>
+                <p>"Aprendi Python do zero com esse guia. Tô pronto pra criar meu app!"</p>
                 <h4>— Lucas, 17 anos</h4>
             </div>
         </div>
     </section>
 
-    <div id="chat-bubble">💬</div>
-    <div id="chat-modal" style="display: none;">
-        <div class="chat-content">
-            <h3>Ei, vibe master! Precisa de ajuda pra escolher o guia perfeito?</h3>
-            <p>Diga "sim" pra uma recomendação rápida!</p>
-            <input type="text" id="chat-input" placeholder="Digite aqui...">
-            <button id="chat-send">Enviar</button>
-            <div id="chat-messages"></div>
-        </div>
-    </div>
-
     <footer id="contato">
-        <p>&copy; 2025 Vibe do Conhecimento. Vamos vibrar juntos!</p>
+        <p>&copy; 2025 Vibe do Conhecimento. Tô ligado? Todos os direitos reservados.</p>
         <p>Contato: <a href="mailto:vendalegal55@gmail.com">vendalegal55@gmail.com</a></p>
         <div class="social-links">
             <a href="https://www.instagram.com/guiadigital2025?igsh=MTg1cDh6ZGo0YTc5dw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
-            <a href="http://www.tiktok.com/@venda.legal2" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a>
         </div>
     </footer>
-
-    <canvas id="confetti-canvas" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
 
     <script src="script.js"></script>
 </body>
