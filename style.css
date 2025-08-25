@@ -8,14 +8,14 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #F8F9FA;
+    background: #FFF3E0;
     color: #2C3E50;
     min-height: 100vh;
 }
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(90deg, #00DDEB, #D100D1);
+    background: linear-gradient(90deg, #FF4500, #FFD700);
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -42,13 +42,13 @@ body {
 .nav-links li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover, .nav-links li a:focus {
-    color: #FFD700;
+    color: #FFE4B5;
 }
 
 .menu-toggle {
@@ -62,7 +62,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #00DDEB, #D100D1);
+    background: linear-gradient(135deg, #FF4500, #FFD700);
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -83,50 +83,58 @@ header::before {
 }
 
 header h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: bounceIn 1s ease-out;
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-top: 15px;
     opacity: 0.9;
     animation: bounceIn 1s ease-out 0.2s both;
 }
 
+.countdown {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #FFE4B5;
+}
+
 .btn {
     display: inline-block;
-    background: linear-gradient(45deg, #D100D1, #FFD700);
+    background: linear-gradient(45deg, #FF4500, #FFD700);
     color: #fff;
-    padding: 15px 35px;
+    padding: 15px 40px;
     text-decoration: none;
     border-radius: 12px;
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.3em;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(209, 0, 209, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
     touch-action: manipulation;
 }
 
 .btn:hover, .btn:focus {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(209, 0, 209, 0.6);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6);
 }
 
 /* Product Grid */
 main {
-    background: #F8F9FA;
+    background: #FFF3E0;
     padding: 60px 20px;
 }
 
 main h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: #2C3E50;
     margin-bottom: 40px;
+    font-weight: 700;
 }
 
 .product-grid {
@@ -146,14 +154,15 @@ main h2 {
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
+    border: 2px solid #FF4500;
 }
 
 .product-card.trending::after {
-    content: '🔥 Em Alta';
+    content: '🔥 Mais Vendido!';
     position: absolute;
     top: 10px;
     right: 10px;
-    background: linear-gradient(45deg, #D100D1, #FFD700);
+    background: linear-gradient(45deg, #FF4500, #FFD700);
     color: #fff;
     padding: 5px 10px;
     border-radius: 12px;
@@ -163,7 +172,7 @@ main h2 {
 
 .product-card:hover, .product-card:focus-within {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(255, 69, 0, 0.2);
 }
 
 .product-card::before {
@@ -173,7 +182,7 @@ main h2 {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(45deg, #D100D1, #FFD700);
+    background: linear-gradient(45deg, #FF4500, #FFD700);
 }
 
 .product-card img {
@@ -188,10 +197,10 @@ main h2 {
 }
 
 .product-card h3 {
-    font-size: 1.7em;
+    font-size: 1.8em;
     margin: 20px 20px 10px;
     color: #2C3E50;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .product-card p {
@@ -202,29 +211,30 @@ main h2 {
 }
 
 .product-card .price {
-    font-size: 1.9em;
-    color: #FFD700;
+    font-size: 2em;
+    color: #FF4500;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .product-card .buy-btn {
-    background: linear-gradient(45deg, #00DDEB, #D100D1);
+    background: linear-gradient(45deg, #FF4500, #FFD700);
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 12px;
     margin: 0 20px 25px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.1em;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 221, 235, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
     touch-action: manipulation;
 }
 
 .product-card .buy-btn:hover, .product-card .buy-btn:focus {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 221, 235, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 69, 0, 0.5);
 }
 
 /* Testimonials */
@@ -235,9 +245,10 @@ main h2 {
 }
 
 #testimonials h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: #2C3E50;
     margin-bottom: 40px;
+    font-weight: 700;
 }
 
 .testimonial-grid {
@@ -249,11 +260,12 @@ main h2 {
 }
 
 .testimonial-card {
-    background: #F8F9FA;
+    background: #FFF3E0;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    border: 1px solid #FF4500;
 }
 
 .testimonial-card:hover, .testimonial-card:focus-within {
@@ -262,13 +274,13 @@ main h2 {
 
 .testimonial-card p {
     font-size: 1.1em;
-    color: #7F8C8D;
+    color: #2C3E50;
     line-height: 1.6;
 }
 
 .testimonial-card h4 {
     font-size: 1.2em;
-    color: #2C3E50;
+    color: #FF4500;
     margin-top: 15px;
 }
 
@@ -293,7 +305,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus {
-    color: #00DDEB;
+    color: #FF4500;
 }
 
 .social-links {
@@ -330,7 +342,7 @@ footer a:hover, footer a:focus {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: linear-gradient(90deg, #00DDEB, #D100D1);
+        background: linear-gradient(90deg, #FF4500, #FFD700);
         position: absolute;
         top: 60px;
         left: 0;
@@ -353,16 +365,20 @@ footer a:hover, footer a:focus {
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     header p {
+        font-size: 1.1em;
+    }
+
+    .countdown {
         font-size: 1em;
     }
 
     .btn {
         padding: 10px 25px;
-        font-size: 0.95em;
+        font-size: 1em;
     }
 
     main {
@@ -370,7 +386,7 @@ footer a:hover, footer a:focus {
     }
 
     main h2, #testimonials h2 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .product-grid, .testimonial-grid {
@@ -383,16 +399,16 @@ footer a:hover, footer a:focus {
     }
 
     .product-card h3 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     .product-card .price {
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
 
     .product-card .buy-btn {
         padding: 10px 25px;
-        font-size: 0.95em;
+        font-size: 1em;
     }
 }
 
