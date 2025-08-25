@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Comidas práticas pra sua vibe fit!',
             price: 'R$ 19,90',
             image: 'images/Saude.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2',
+            kiwifyLink: 'https://pay.kiwify.com.br/sdee28v',
             trending: true
         },
         {
@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
 
