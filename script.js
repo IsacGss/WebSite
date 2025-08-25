@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Dicas pra mandar bem na seleção!',
             price: 'R$ 24,90',
             image: 'images/reprovado.jpg',
-            kiwifyLink: 'https://kiwify.com.br/seu-link-aqui-2'
+            kiwifyLink: 'https://pay.kiwify.com.br/FqbaUXs'
         },
         {
             id: 'Marketing Digital',
@@ -80,3 +80,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
